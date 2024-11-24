@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-5">
+        <!-- (recipeSelected)="onCurrentRecipeUpdated($event)" -->
+        <app-recipe-list></app-recipe-list>
+    </div> 
+    <div class="col-md-5">
+        <router-outlet></router-outlet>
+        <!--
+            <app-recipe-detail *ngIf="currentRecipe; else infoText" [recipe]="currentRecipe"></app-recipe-detail>
+            <ng-template #infoText>
+                <p>Please select a recipe</p>
+            </ng-template>
+        -->
+    </div> 
+</div>
